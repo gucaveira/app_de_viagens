@@ -28,7 +28,7 @@ public class PagamentoActivity extends AppCompatActivity {
     }
 
     private void mostraPreco(Pacote pacote) {
-        TextView preco = findViewById(R.id.pagemento_preco_pacote);
+        TextView preco = findViewById(R.id.pagamento_preco_pacote);
         String moedaBrasileira = MoedaUtil.formataBrasileiro(pacote.getPreco());
         preco.setText(moedaBrasileira);
     }
