@@ -44,7 +44,8 @@ public class ListaPacoteAdapter extends BaseAdapter {
 
     @Override
     public View getView(int posicao, View convertView, ViewGroup parent) {
-        View viewCriada = LayoutInflater.from(context).inflate(R.layout.item_pacote,
+        View viewCriada = LayoutInflater.from(context)
+                .inflate(R.layout.item_pacote,
                 parent, false);
 
         Pacote pacote = pacotes.get(posicao);
@@ -57,7 +58,7 @@ public class ListaPacoteAdapter extends BaseAdapter {
     }
 
     private void mostrarPreco(View viewCriada, Pacote pacote) {
-        TextView preco = viewCriada.findViewById(R.id.item_pacote_imagem);
+        TextView preco = viewCriada.findViewById(R.id.item_pacote_preco);
         String moedaBrasileiro = MoedaUtil.formataBrasileiro(pacote.getPreco());
         preco.setText(moedaBrasileiro);
     }

@@ -25,9 +25,6 @@ public class ListaPacoteActivity extends AppCompatActivity {
 
         setTitle(TITULO_BAR);
         configuraLista();
-
-        Intent intent = new Intent(this, ResumoPacoteActivity.class);
-        startActivity(intent);
     }
 
     private void configuraLista() {
