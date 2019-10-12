@@ -7,8 +7,8 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.appdeviagens.R;
-import com.appdeviagens.util.MoedaUtil;
 import com.appdeviagens.model.Pacote;
+import com.appdeviagens.util.MoedaUtil;
 
 import java.math.BigDecimal;
 
@@ -22,7 +22,8 @@ public class PagamentoActivity extends AppCompatActivity {
 
         setTitle(TITULO_PAGAMENTO);
 
-        Pacote pacote = new Pacote("São Paulo", "sao_paulo_sp", 2, new BigDecimal("243,99"));
+        Pacote pacote = new Pacote("São Paulo", "sao_paulo_sp",
+                2, new BigDecimal("243,99"));
 
         mostraPreco(pacote);
     }

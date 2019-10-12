@@ -46,7 +46,7 @@ public class ListaPacoteAdapter extends BaseAdapter {
     public View getView(int posicao, View convertView, ViewGroup parent) {
         View viewCriada = LayoutInflater.from(context)
                 .inflate(R.layout.item_pacote,
-                parent, false);
+                        parent, false);
 
         Pacote pacote = pacotes.get(posicao);
         mostrarPreco(viewCriada, pacote);

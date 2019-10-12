@@ -1,6 +1,5 @@
 package com.appdeviagens.ui.activity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ListView;
 
@@ -30,6 +29,6 @@ public class ListaPacoteActivity extends AppCompatActivity {
     private void configuraLista() {
         ListView listaDePacotes = findViewById(R.id.lista_pacotes_listview);
         List<Pacote> pacotes = new PacoteDao().lista();
-listaDePacotes.setAdapter(new ListaPacoteAdapter(pacotes, this));
+        listaDePacotes.setAdapter(new ListaPacoteAdapter(pacotes, this));
     }
 }
