@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:contex="ui.activity.ResumoPacoteActivity"
-    tools:context=".ui.ResumoCompraActivity">
+    tools:context=".ui.activity.ResumoCompraActivity">
 
     <ImageView
         android:id="@+id/resumo_compra_banner_inicial"

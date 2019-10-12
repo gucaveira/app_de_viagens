@@ -4,8 +4,8 @@ import androidx.annotation.NonNull;
 
 public class DiasUtil {
 
-    public static final String PLURAL = "dias";
-    public static final String SINGULAR = "dia";
+    private static final String PLURAL = " dias";
+    private static final String SINGULAR = " dia";
 
     @NonNull
     public static String formataEmTexto(int quantidadeDeDias) {
